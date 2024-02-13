@@ -9,7 +9,7 @@ image: images/home_signage.png
 color: orchid
 ---
 
-![background](../_images/home_signage.png)
+![background](/_images/home_signage.png)
 
 Lorem ipsum dolor sit amet, [consectetur adipisicing](https://google.ca) elit. Praesentium inventore hic possimus, cum nesciunt ea debitis, tempora officia perferendis vero ratione nam laudantium aliquid voluptatem velit? Open `/src/layouts.vue` and then edit the `main.css` file.
 
@@ -112,4 +112,4 @@ class Foo extends bar
 
 ## Random Image
 
-![mojave](../_images/mojave-night.jpg)
+![mojave](/_images/mojave-night.jpg)
