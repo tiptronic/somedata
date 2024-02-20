@@ -12,10 +12,25 @@ tags: ["development", "javascript"]
 Sort array using intlCollator
 
 ```javascript
-const arrayOfStrings = ['A', 'B','a', 'b', 'ç', 'à', 'Ä', 'c', 'Ç', 'ä'];
+const arrayOfStrings = ['a', 'b', 'ø', ,'ö', 'o','A', 'B','C', 'ç', 'à', 'Ä', 'c', 'Ç', 'ä', 'Ä'];
 const intlCollator_de = new Intl. Collator('de');
 
 const arrayOfTexts = [
+    {
+        text: 'alphabet'
+    },
+    {
+        text: 'busy'
+    },
+    {
+        text: 'øde'
+    },
+    {
+        text: 'öde'
+    },
+     {
+        text: 'ode'
+    },
     {
         text: 'Alphabet'
     },
@@ -23,10 +38,7 @@ const arrayOfTexts = [
         text: 'Berta'
     },
     {
-        text: 'also'
-    },
-    {
-        text: 'bug'
+        text: 'Cäsar'
     },
     {
         text: 'çedilla'
@@ -68,6 +80,9 @@ console.log('sort text using localeCompare');
 console.log([...arrayOfTexts].sort((a,b) => a.text.localeCompare(b.text, 'de', { sensitivity: "base" })));
 console.log('sort text using localeCompare upperCase first');
 console.log([...arrayOfTexts].sort((a,b) => a.text.localeCompare(b.text, 'de', { caseFirst: 'upper' })));
+console.log('sort first character of text using localeCompare upperCase first');
+console.log([...arrayOfTexts].sort((a,b) => a.text[0].localeCompare(b.text[0], 'de', { caseFirst: 'upper' })));
+
 
 ```
 
